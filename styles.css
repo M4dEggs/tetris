@@ -1,19 +1,83 @@
-.grid {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(237, 236, 236, 0.77);
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+}
+
+.container {
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    width: 80%;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.193);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.192);
+    overflow: hidden;
+}
+
+.header {
+    margin-top: 2%;
+    color: rgba(0, 0, 0, 0.93); 
+    text-shadow: 2px 2px 2px #00000052
+}
+.intro {
+    font-size: 19px;
+    font-weight: bolder;
+}
+.text--1 {
+    color: rgb(244, 126, 35);
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 2px 2px 5px #ff8c0052;
+}
+.header--2 {
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 5px #00000052;
+}
+
+.projects-1 {
+    padding-top: 10%;
     margin: auto;
-    width: 200px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: yellow;
+    width: 90%;
+    height: 25vh;
+    border: 2px solid rgba(0, 0, 0, 0.255);
+    margin-top: 5%;
+}
+
+@media screen and (min-width:720px){
+    body{
+        font-size: 25px;
+    }
+
+    .container{
+        height: 70vh;
+        box-shadow: 15px 15px rgba(0, 0, 0, 0.192);
+    }
+
+    .intro{
+        font-size: 25px;
+    }
+
+    .text--1{
+        font-size: 30px;
+    }
+
+    .projects-1{
+        padding-top: 2%;
+        margin-top: 2%;
+        height: 20vh;
+    }
+
 
 }
 
-.grid div {
-    height: 20px;
-    width: 20px;
-    
-}
-
-.shape {
-    background-color: rgb(204, 0, 255);
-}
